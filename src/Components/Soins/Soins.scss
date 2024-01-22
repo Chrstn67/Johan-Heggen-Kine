@@ -1,0 +1,31 @@
+.soins-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-top: 1em;
+    width: 18em;
+    transition: transform 0.4s;
+  }
+
+  @media (min-width: 375px) {
+    img {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  @media (min-width: 670px) {
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      margin-right: 1em;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
